@@ -1,1 +1,83 @@
-Hello Nithi
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Anand Kannappan</title>
+        <meta name="description" content="I'm Anand. I like thinking, developing, and leading." />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/unslider.css" type="text/css">
+<!--         <link href="icons/sprites/sprites.css" rel="stylesheet" type="text/css">
+ -->        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+    <div id="main-container">
+        <div class="container" id="splashContainer">
+            <div class="header row">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 headshot">
+                    <img src="images/Headshot.jpg" class="img-responsive" id="headshot" alt="Responsive image">
+                </div>
+                <div class="col-md-7 name">
+                    <h1>Hi, I'm Anand.</h1>
+                    <div class="typing">
+                        <span id="typingAnimation"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="tagline row"> -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/unslider-min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/typed.js"></script>
+        // <script>
+        //     jQuery(document).ready(function($) {
+        //         $('.gallery').unslider();
+        //     });
+        // </script>
+        <script>
+          $(function(){
+              if($(window).width() > 640) {
+                  $("#typingAnimation").typed({
+                    strings: ["Computer Science student", "Aspiring Entrepreneur", "Eclectically Curious", "Self-Professed Nerd", "Film Aficionado", "Passionate Techie", "Lover of Aesthetic Design", "Basketball Fanatic", "Part-time Pianist", "Builder of Cool Things", "Bookworm", "Science Enthusiast", "Deep Thinker"],
+                    typeSpeed: 50,
+                    backDelay: 1000,
+                    loop: true,
+                    loopCount: false,
+                    callback: function(){}
+                  });
+              } else {
+                    $(".typing").hide();
+                    $("#typed-cursor").hide();
+                    $("#typeAnimation").hide();
+              }
+          });
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-54253544-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+        <!-- If using skrollr.js -->
+        <!-- // <script type="text/javascript" src="js/skrollr.min.js"></script>
+        // <script type="text/javascript">
+        if($(window).width() > 640) {
+            var s = skrollr.init();
+        } else {
+            skrollr.init().destroy();
+        }
+        </script> -->
+</body>
+    <!-- </body> -->
+</html>
