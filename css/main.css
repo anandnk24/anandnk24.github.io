@@ -73,7 +73,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 2;
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 /* line 86, scss/main.scss */
@@ -124,6 +124,7 @@ body {
   border-radius: 50%;
   position: relative;
   top: -35px;
+  opacity: 7;
 }
 
 /* line 127, scss/main.scss */
