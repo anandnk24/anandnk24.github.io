@@ -109,6 +109,8 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  position: relative;
+  top: -35px;
 }
 
 /* line 127, scss/main.scss */
@@ -116,7 +118,7 @@ body {
   max-height: 380px;
   position: relative;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 65px;
 }
 
 /* line 134, scss/main.scss */
