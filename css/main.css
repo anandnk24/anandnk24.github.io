@@ -65,14 +65,26 @@ body {
   font-size: 20px;
 }
 
+#overlay {
+  background: url("../images/layer.png") repeat scroll left top;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 /* line 86, scss/main.scss */
 #splashContainer {
   background: url("../images/background.jpg") no-repeat center center fixed;
+  position: relative;
   background-size: cover;
   height: 100vh;
   width: 100vw;
   display: table-cell;
   vertical-align: middle;
+  z-index: 1;
 }
 
 /* line 95, scss/main.scss */
