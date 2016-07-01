@@ -34,18 +34,15 @@
         </div>
     </div>
     
-    <div class="arrow animated bounce">
+    <div class="arrow animated bounce" onmouseover="scroll_down();">
         <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K" />
     </div>
 
     <div class="container">
-            <div id="logo">
-                <img src="images/myLogo.png">
-            </div>
             <div class="content row">
                 <div class="col-md-12 about">
                     <h1 class="heading">About Me</h1>
-                    <p>I am an Economics and Computer Science student at the University of Chicago. I'm originally from the Bay Area. <br><br>I live at the intersection of technology, business, and innovation. I am eclectically curious, broad-minded and entrepreneurial - I'm interested in building ventures that change the world. <br><br> I'm a voracious reader and I love learning. I religiously follow basketball (go Warriors!). I occasionally jam on the piano and fanboy over Elon Musk (sometimes simultaneously). <br><br> When I'm not following tech blogs or learning, I am developing and hacking things and meeting exciting people in the process. I am incredibly passionate about technology and its ability to change the world - I aspire to be a part of that change.</p>
+                    <p>I am an Economics and Computer Science student at the University of Chicago. I'm originally from the Bay Area. <br><br>I live at the intersection of technology, business, and innovation. I am eclectically curious, broad-minded and entrepreneurial - I'm interested in building ventures that change the world. <br><br> I'm a voracious reader and I love learning. I religiously follow basketball (go Warriors!). I occasionally jam on the piano and fanboy over Elon Musk (sometimes simultaneously). <br><br> When I'm not following tech blogs or learning, I am developing and hacking things and meeting exciting people in the process. I am incredibly passionate about technology and its ability to change the world - I aspire to be a part of that change. <br><br><br></p>
                 </div>
             </div>
     </div>
@@ -56,6 +53,27 @@
         <script src="js/unslider-min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/typed.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            var scrolling = null;
+            function scroll_up() {
+                var d = document.getElementById('scroller');
+                d.scrollTop = d.scrollTop - 5;
+                scrolling = window.setTimeout(function() {
+                    scroll_up();
+                }, 20);
+            }
+            function scroll_down() {
+                var d = document.getElementById('scroller');
+                d.scrollTop = d.scrollTop + 5;
+                scrolling = window.setTimeout(function() {
+                    scroll_down();
+                }, 20);
+            }
+            function stop_scroll() {
+                window.clearTimeout(scrolling);
+            }
+        </script>
         <script>
         //     jQuery(document).ready(function($) {
         //         $('.gallery').unslider();

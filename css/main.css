@@ -144,7 +144,7 @@ body {
 }
 
 .arrow {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   top: 640px;
   left: 50%;
