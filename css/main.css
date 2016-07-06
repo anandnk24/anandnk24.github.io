@@ -236,9 +236,9 @@ animation-duration:2s;
 
 /* line 171, scss/main.scss */
 .logos {
-  font-size: 50px;
+  font-size: 75px;
   color: #7b7b7b;
-  padding-top: 30px;
+  padding-top: 1px;
 }
 /* line 176, scss/main.scss */
 .logos a, .logos a:link, .logos a:visited, .logos a:active {
@@ -256,6 +256,7 @@ animation-duration:2s;
   font-weight: 600;
   color: #f3a500;
   font-size: 45px;
+  padding-bottom: 25px;
 }
 
 /* line 193, scss/main.scss */
