@@ -243,6 +243,7 @@ animation-duration:2s;
 /* line 176, scss/main.scss */
 .logos a, .logos a:link, .logos a:visited, .logos a:active {
   color: #7b7b7b;
+  padding-left: 10px;
 }
 
 /* line 182, scss/main.scss */
@@ -257,6 +258,7 @@ animation-duration:2s;
   color: #f3a500;
   font-size: 45px;
   padding-bottom: 25px;
+  text-align: center;
 }
 
 /* line 193, scss/main.scss */
