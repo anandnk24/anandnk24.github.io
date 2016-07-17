@@ -146,13 +146,15 @@
 
         <script>
                 $(document).ready(function() {
-                    $("i").hover(
-                        function() {
-                            $(this).animate({top: "-=15px"}, 200);
-                        }, function() {
-                            $(this).animate({top: "+=15px"}, 200);
-                        }
-                    );
+                    if($(window).width() > 500) {
+                        $("i").hover(
+                            function() {
+                                $(this).animate({top: "-=15px"}, 200);
+                            }, function() {
+                                $(this).animate({top: "+=15px"}, 200);
+                            }
+                        );
+                    }
                 });
 
         </script>
