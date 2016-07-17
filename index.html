@@ -48,11 +48,11 @@
 
                 <div class="col-md-12 logos">
                     <h1 class="heading">Learn More About Me</h1>
-                    <a href="http://www.github.com/anandnk24"><i class="fa fa-github-alt"></i></a> &nbsp;
-                    <a href="http://www.linkedin.com/in/anandnkannappan/"><i class="fa fa-linkedin-square"></i></a> &nbsp;
-                    <a href="http://www.facebook.com/akannappan"><i class="fa fa-facebook-square"></i> </a> &nbsp;
-                    <a href="http://www.twitter.com/anandnk24"><i class="fa fa-twitter"></i></a> &nbsp;
-                    <a href="mailto:akannappan@uchicago.edu"><i class="fa fa-envelope"></i></a> &nbsp;
+                    <a href="http://www.github.com/anandnk24" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a> &nbsp;
+                    <a href="http://www.linkedin.com/in/anandnkannappan/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> &nbsp;
+                    <a href="http://www.facebook.com/akannappan" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a> &nbsp;
+                    <a href="http://www.twitter.com/anandnk24" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp;
+                    <a href="mailto:akannappan@uchicago.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a> &nbsp;
                 </div>
 
             </div>
@@ -141,6 +141,15 @@
             //         $('html, body').scrollTo('.col-md-12', 1000);
             //     });
             // });
+            $(document).ready(function() {
+                $("i").hover(
+                    function() {
+                        $(this).animate({top: "-=15px"}, 250);
+                    }, function() {
+                        $(this).animate({top: "+=15px"}, 250);
+                    }
+                );
+            });
 
         </script>
 
