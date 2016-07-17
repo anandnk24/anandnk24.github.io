@@ -246,6 +246,10 @@ animation-duration:2s;
   padding-left: 10px;
 }
 
+.fa {
+  position: relative;
+}
+
 /* line 182, scss/main.scss */
 .contact {
   padding-top: 30px;
@@ -257,7 +261,7 @@ animation-duration:2s;
   font-weight: 600;
   color: #f3a500;
   font-size: 45px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
