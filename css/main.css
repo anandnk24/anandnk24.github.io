@@ -147,11 +147,10 @@ body {
 .arrow {
   position: absolute;
   bottom: 0;
-  top: 640px;
   left: 50%;
   margin-left:-20px;
   z-index: 1000;
-  vertical-align: bottom;
+  top: 93%;
 }
 
 .bounce {
